@@ -1,0 +1,67 @@
+.futer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+}
+
+.futer__logotext {
+    color: var(--accent-colour);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.futer a {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    transition: color 250ms var(--transition-cubic);
+}
+
+.futer__adress {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--white-text-colour);
+    line-height: 1.71;
+    transition: color 250ms var(--transition-cubic);
+    &:hover {
+        color: var(--accent-colour);
+        }
+    }
+
+.futer__logo {
+    color: var(--white-text-colour);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 250ms var(--transition-cubic);
+    &:hover {
+            color: var(--accent-colour);
+        }
+}
+
+.futer__link {
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--futer-mail-tel);
+    transition: color 250ms var(--transition-cubic);
+    &:hover,
+    &:focus {
+            color: var(--accent-colour);
+        }
+}
+.container.futer {
+    display: flex;
+    align-items: baseline;
+    padding-top: 0;
+    padding-bottom: 0;
+}
