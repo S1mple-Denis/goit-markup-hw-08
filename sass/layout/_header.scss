@@ -1,0 +1,47 @@
+/* хэдер */
+.page-header {
+    border-bottom: 1px solid var(--border-bottom);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.main-nav__item+.main-nav__item {
+    margin-left: 50px;
+}
+
+.main-nav__item:last-child {
+    margin-right: 0;
+}
+
+.main-nav__logo {
+    color: var(--title-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    transition: color 250ms var(--transition-cubic);
+    &:hover {
+        color: var(--accent-colour);
+        }
+}
+
+.main-nav__logotext {
+    color: var(--accent-colour);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+
+
