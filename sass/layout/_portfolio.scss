@@ -1,17 +1,32 @@
 /* страница портфолио */
 .portfolio {
     background-color: var(--white-text-colour);
+    margin: 0 auto;
+    width: 100%;
+    
 }
-
+.page-portfolio {
+    
+}
 .portfolio__list {
     display: flex;
+    flex-wrap: wrap;
+    @include tablet {
     justify-content: center;
+    }
+    
+    // gap: 8px;
+    // justify-content: center;
 }
 
 .portfolio__item {
     margin-right: 8px;
+    margin-bottom: 15px;
+    // margin-right: 8px;
     &:last-child {
             margin-right: 0;
         }
+    @media screen and (min-width:768px) {
+        
 }
-
+}
