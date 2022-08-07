@@ -8,14 +8,18 @@ body {
 .container {
     margin: 0 auto;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0;
+    
     
     @include mobile {
         width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     @include tablet {
         width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     @include desktop{
         width: 1200px;

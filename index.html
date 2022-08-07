@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container main-nav">
         <nav class="main-nav">
           <a href="/" class="main-nav__logo"
@@ -57,18 +57,18 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main class="hero">
-      <!-- <section class="hero-page">
-        <div class="container">
+      <section class="hero-page">
+        <!-- <div class="container"> -->
           <h1 class="hero-page__title">
-            Эффективные решения <br />для вашего бизнеса
+            Ефективні рішення для вашого бізнесу
           </h1>
           <button type="button" class="hero-page__button" data-modal-open>
-            Заказать услугу
+            Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="prefences section">
         <div class="container">
@@ -80,10 +80,9 @@
                   <use href="./image/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="prefences__title">Внимание к деталям</h3>
+              <h3 class="prefences__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p>
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="prefences__item icon-clock">
@@ -92,10 +91,9 @@
                   <use href="./image/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="prefences__title">Пунктуальность</h3>
+              <h3 class="prefences__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p>
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="prefences__item icon-pc">
@@ -104,10 +102,9 @@
                   <use href="./image/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="prefences__title">Планирование</h3>
+              <h3 class="prefences__title">ПЛАНУВАННЯ</h3>
               <p>
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="prefences__item icon-cosmo">
@@ -116,10 +113,9 @@
                   <use href="./image/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="prefences__title">Современные технологии</h3>
+              <h3 class="prefences__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p>
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -167,12 +163,32 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__item">
+              <picture>
+              <source 
+              srcset="./image/Product_Designer-desktop-1x.jpeg 1x,
+              ./image/Product_Designer-desktop-2x.jpeg 2x" 
+              media="(min-width: 1200px)"
+              />
+              <source srcset="./image/Product_Designer-tablet-1x.jpeg 1x,
+              ./image/Product_Designer-tablet-2x.jpeg 2x" 
+              media="(min-width: 768px)"
+              />
+              <source srcset="./image/Product_Designer.jpg 1x,
+              ./image/Product_Designer-2x.jpeg 2x" 
+              media="(min-width: 320px)"
+              />
               <img
+              srcset="./image/Product_Designer.jpg 1x,
+              ./image/Product_Designer-2x.jpeg 2x"
+
                 src="./image/Product_Designer.jpg"
                 alt="Product_designer"
                 width="270"
               />
-              <h3 class="our-team__name">Игорь Демьяненко</h3>
+              </picture>
+
+              
+              <h3 class="our-team__name">Ігор Дем'яненко</h3>
               <p>Product Designer</p>
               <ul class="our-team__social">
                 <li>
@@ -208,12 +224,31 @@
               </ul>
             </li>
             <li class="our-team__item">
+              <picture>
+              <source 
+              srcset="./image/Frontend_Developer-desktop-1x.jpeg 1x,
+              ./image/Frontend_Developer-desktop-2x.jpeg 2x" 
+              media="(min-width: 1200px)"
+              />
+              <source srcset="./image/Frontend_Developer-tablet-1x.jpeg 1x,
+              ./image/Frontend_Developer-tablet-2x.jpeg 2x" 
+              media="(min-width: 768px)"
+              />
+              <source srcset="./image/Frontend_Developer.jpg 1x,
+              ./image/Frontend_Developer-2x.jpeg 2x" 
+              media="(min-width: 320px)"
+              />
               <img
+              srcset="./image/Frontend_Developer.jpg 1x,
+              ./image/Frontend_Developer-2x.jpeg 2x"
+
                 src="./image/Frontend_Developer.jpg"
                 alt="Frontend_Developer"
                 width="270"
               />
-              <h3 class="our-team__name">Ольга Репина</h3>
+              </picture>
+
+              <h3 class="our-team__name">Ольга Рєпіна</h3>
               <p>Frontend Developer</p>
               <ul class="our-team__social">
                 <li>
@@ -249,8 +284,28 @@
               </ul>
             </li>
             <li class="our-team__item">
-              <img src="./image/Marketing.jpg" alt="Marketing" width="270" />
-              <h3 class="our-team__name">Николай Тарасов</h3>
+              <picture>
+              <source 
+              srcset="./image/Marketing-desktop-1x.jpeg 1x,
+              ./image/Marketing-desktop-2x.jpeg 2x" 
+              media="(min-width: 1200px)"
+              />
+              <source srcset="./image/Marketing-tablet-1x.jpeg 1x,
+              ./image/Marketing-tablet-2x.jpeg 2x" 
+              media="(min-width: 768px)"
+              />
+              <source srcset="./image/Marketing.jpg 1x,
+              ./image/Marketing-2x.jpeg 2x" 
+              media="(min-width: 320px)"
+              />
+              <img 
+              srcset="./image/Marketing.jpg 1x,
+              ./image/Marketing-2x.jpeg 2x"
+              
+              src="./image/Marketing.jpg" alt="Marketing" width="270" />
+              </picture>
+
+              <h3 class="our-team__name">Микола Тарасов</h3>
               <p>Marketing</p>
               <ul class="our-team__social">
                 <li>
@@ -286,12 +341,31 @@
               </ul>
             </li>
             <li class="our-team__item">
+              <picture>
+              <source 
+              srcset="./image/UI_Designer-desktop-1x.jpeg 1x,
+              ./image/UI_Designer-desktop-2x.jpeg 2x" 
+              media="(min-width: 1200px)"
+              />
+              <source srcset="./image/UI_Designer-tablet-1x.jpeg 1x,
+              ./image/UI_Designer-tablet-2x.jpeg 2x" 
+              media="(min-width: 768px)"
+              />
+              <source srcset="./image/UI_Designer.jpg 1x,
+              ./image/UI_Designer-2x.jpeg 2x" 
+              media="(min-width: 320px)"
+              />
               <img
+              srcset="./image/UI_Designer.jpg 1x,
+              ./image/UI_Designer-2x.jpeg 2x"
+              
                 src="./image/UI_Designer.jpg"
                 alt="UI_Designer"
                 width="270"
               />
-              <h3 class="our-team__name">Михаил Ермаков</h3>
+              </picture>
+
+              <h3 class="our-team__name">Михайло Єрмаков</h3>
               <p>UI Designer</p>
               <ul class="our-team__social">
                 <li>
@@ -331,7 +405,7 @@
       </section>
       <section class="client section">
         <div class="container">
-          <h2 class="clients__text">Постоянные клиенты</h2>
+          <h2 class="clients__text">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="client__item">
               <a class="clients__card" href="">
@@ -392,7 +466,7 @@
               <a
                 class="futer__adress"
                 href="https://goo.gl/maps/yd3jDt4MuSyeWMqWA"
-                >г. Киев, пр-т Леси Украинки, 26</a
+                >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
             <li class="futer__mail">
@@ -408,7 +482,7 @@
           </ul>
         </div>
         <div class="social-links">
-          <p class="social-links__text">Присоединяйтесь</p>
+          <p class="social-links__text">приєднуйтесь</p>
           <ul class="social-links__list">
             <li class="social-links__item">
               <a class="social-links__link" href="">
@@ -443,7 +517,7 @@
           </ul>
         </div>
         <div class="futer-subscribe">
-          <p class="futer-subscribe__text">Подпишитесь на рассылку</p>
+          <p class="futer-subscribe__text">Підпишіться на розсилку</p>
           <form class="futer-subscribe__form">
             <label for="submit-form"></label>
             <input
