@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container main-nav">
         <nav class="main-nav">
           <a href="/" class="main-nav__logo"
@@ -56,8 +56,66 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg class="mob_menu-icon" width="40px" height="40px">
+                <use href="./image/symbol-defs.svg#mob_menu-icon40"></use>
+              </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div class="container">
+        <button type="button" class="menu-close-btn">X
+        </button>
+        <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a href="./" class="mob-menu__link current">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mob-menu__contacts">
+          <li class="mob-menu__contact-link">
+            <a class="mob-menu__link_tel" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-menu__contact-link">
+            <a class="mob-menu__link_mail" href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mob-menu__social">
+                <li>
+                  <a href="https://www.instagram.com" class="mob-menu__sllink">
+                  Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.twitter.com" class="mob-menu__sllink">
+                  Twitter
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.facebook.com" class="mob-menu__sllink">
+                  Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" class="mob-menu__sllink">
+                  Linkedin 
+                  </a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </header>
     <main class="hero">
       <section class="hero-page">
         <!-- <div class="container"> -->
@@ -121,9 +179,9 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="about section">
+      <section class="about section">
         <div class="container">
-          <h2 class="about__title">Чем мы занимаемся</h2>
+          <h2 class="about__title">Чим ми займаємося</h2>
           <ul class="about__list">
             <li class="about__item">
               <img
@@ -132,7 +190,7 @@
                 width="370"
               />
               <div class="about__text">
-                <p>Десктопные приложения</p>
+                <p>Десктопні додатки</p>
               </div>
             </li>
             <li class="about__item">
@@ -142,7 +200,7 @@
                 width="370"
               />
               <div class="about__text">
-                <p>Мобильные приложения</p>
+                <p>Мобільні додатки</p>
               </div>
             </li>
             <li class="about__item">
@@ -152,12 +210,12 @@
                 width="370"
               />
               <div class="about__text">
-                <p>Дизайнерские решения</p>
+                <p>Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="our-team section">
         <div class="container">
           <h2 class="our-team__title">Наша команда</h2>
@@ -358,13 +416,11 @@
               <img
               srcset="./image/UI_Designer.jpg 1x,
               ./image/UI_Designer-2x.jpeg 2x"
-              
                 src="./image/UI_Designer.jpg"
                 alt="UI_Designer"
                 width="270"
               />
               </picture>
-
               <h3 class="our-team__name">Михайло Єрмаков</h3>
               <p>UI Designer</p>
               <ul class="our-team__social">

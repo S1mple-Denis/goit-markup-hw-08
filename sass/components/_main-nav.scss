@@ -10,9 +10,16 @@
 }
 
 .main-nav__contacts {
-    display: flex;
+    display: none;
+@include tablet {
+        display: flex;
+        margin-left: auto;
+    }
 
-    margin-left: auto;
+    @include desktop {
+        display: flex;
+        margin-left: auto;
+    }
 }
 
 .main-nav__contact-link+.main-nav__contact-link {
