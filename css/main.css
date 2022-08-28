@@ -602,6 +602,16 @@ ul {
   text-decoration: none;
 }
 
+.container_mob-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 40px;
+}
+
 .menu-open-btn {
   display: block;
   margin-left: auto;
@@ -615,6 +625,7 @@ ul {
 .menu-close-btn {
   display: block;
   margin-left: auto;
+  margin-right: 21px;
   border: none;
 }
 
@@ -659,6 +670,37 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mob-menu__social {
+  display: flex;
+  margin-top: 64px;
+  padding-bottom: 48px;
+  position: relative;
+}
+
+.mob-menu__sllink {
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-menu__sllink:not(:last-child) {
+  padding-right: 0;
+}
+
+.mob-menu__social-item::after {
+  content: '';
+  position: absolute;
+  left: 85px;
+  top: 10px;
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 /* страница герой */

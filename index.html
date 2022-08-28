@@ -62,8 +62,9 @@
               </svg>
         </button>
       </div>
-      <div class="mob-menu">
-        <div class="container">
+      <div class="mob-menu is-hidden">
+        <v class="container_mob-menu">
+          <div class="mob-menu-top">
         <button type="button" class="menu-close-btn">X
         </button>
         <ul class="mob-menu__list">
@@ -78,42 +79,44 @@
             </li>
           </ul>
         </nav>
+        </div>
+        <div class="mob-menu-bottom">
         <ul class="mob-menu__contacts">
           <li class="mob-menu__contact-link">
             <a class="mob-menu__link_tel" href="tel:+380961111111">
               +38 096 111 11 11</a
             >
           </li>
-          <li class="mob-menu__contact-link">
+          <li class="mob-menu__contact-link_mail">
             <a class="mob-menu__link_mail" href="mailto:info@devstudio.com">
               info@devstudio.com</a>
           </li>
         </ul>
         <ul class="mob-menu__social">
-                <li>
+                <li class="mob-menu__social-item">
                   <a href="https://www.instagram.com" class="mob-menu__sllink">
                   Instagram
                   </a>
                 </li>
 
-                <li>
+                <li class="mob-menu__social-item">
                   <a href="https://www.twitter.com" class="mob-menu__sllink">
                   Twitter
                   </a>
                 </li>
 
-                <li>
+                <li class="mob-menu__social-item">
                   <a href="https://www.facebook.com" class="mob-menu__sllink">
                   Facebook
                   </a>
                 </li>
-                <li>
+                <li class="mob-menu__social-item">
                   <a href="https://www.linkedin.com" class="mob-menu__sllink">
                   Linkedin 
                   </a>
                 </li>
-              </ul>
-        </div>
+          </ul>
+          </div>
       </div>
     </header>
     <main class="hero">
@@ -510,13 +513,13 @@
       </section>
     </main>
 
-    <!-- <footer class="futer">
+    <footer class="futer">
       <div class="futer container">
         <div class="futer__logo">
           <a href="/" class="futer__logo">
             <span class="futer__logotext">Web</span>Studio
           </a>
-          <!-- <address> -->
+          <address>
     <!-- <ul>
             <li class="futer__list">
               <a
@@ -593,9 +596,8 @@
         </div>
       </div>
     </footer> -->
-    -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal__form">
@@ -658,6 +660,7 @@
         </button>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
