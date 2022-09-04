@@ -12,21 +12,39 @@
 .main-nav__contacts {
     display: none;
 @include tablet {
-        display: flex;
+        display: block;
         margin-left: auto;
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
 
     @include desktop {
         display: flex;
-        margin-left: auto;
+        margin-left: 315px;
     }
 }
 
 .main-nav__contact-link+.main-nav__contact-link {
     padding-left: 50px;
+    @include tablet {
+        padding: 0;
+    }
 }
 
 .main-nav__contacts a {
+    display: none;
+@include tablet {
+    display: flex;
+    padding: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+    }
+
+@include desktop {
     display: flex;
     align-items: center;
     align-items: baseline;
@@ -37,6 +55,7 @@
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
+    }
 }
 
 .main-nav__icon {

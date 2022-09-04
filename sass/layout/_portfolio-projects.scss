@@ -87,6 +87,7 @@ a {
     border-bottom: 1px solid var(--border-portfolio);
     border-left: 1px solid var(--border-portfolio);
     border-right: 1px solid var(--border-portfolio);
+    
 }
 
 .project__name {
@@ -95,6 +96,14 @@ a {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+}
+
+.first__card {
+    padding-bottom: 56px;
+    
+    @include desktop {
+        padding-bottom: 20px;
+    } 
 }
 
 .main-project-group {

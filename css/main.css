@@ -119,15 +119,17 @@ ul {
 
 @media screen and (min-width: 768px) {
   .main-nav__contacts {
-    display: flex;
+    display: block;
     margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-nav__contacts {
     display: flex;
-    margin-left: auto;
+    margin-left: 315px;
   }
 }
 
@@ -135,17 +137,42 @@ ul {
   padding-left: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .main-nav__contact-link + .main-nav__contact-link {
+    padding: 0;
+  }
+}
+
 .main-nav__contacts a {
-  display: flex;
-  align-items: center;
-  align-items: baseline;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 10px;
-  color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  text-decoration: none;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav__contacts a {
+    display: flex;
+    padding: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav__contacts a {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 10px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+  }
 }
 
 .main-nav__icon {
@@ -184,7 +211,14 @@ ul {
 }
 
 .futer-subscribe {
-  margin-left: auto;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .futer-subscribe {
+    margin-left: auto;
+    margin-top: 0;
+  }
 }
 
 .futer-subscribe__text {
@@ -197,14 +231,24 @@ ul {
 }
 
 .futer-subscribe__form {
-  display: flex;
+  display: block;
   margin-top: 20px;
-  border: none;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .futer-subscribe__form {
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 0;
+    border: none;
+  }
 }
 
 .submit-input {
   /* position: absolute; */
-  width: 358px;
+  margin-bottom: 20px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -220,13 +264,20 @@ ul {
   border-color: var(--accent-colour);
 }
 
+@media screen and (min-width: 1200px) {
+  .submit-input {
+    width: 358px;
+  }
+}
+
 .futer-subscribe__button {
   position: relative;
   display: flex;
   align-items: center;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--accent-colour);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -243,6 +294,14 @@ ul {
 .futer-subscribe__button:hover, .futer-subscribe__button:focus {
   background-color: var(--bg-page-colour);
   color: var(--accent-colour);
+}
+
+@media screen and (min-width: 1200px) {
+  .futer-subscribe__button {
+    position: relative;
+    display: flex;
+    margin-left: 12px;
+  }
 }
 
 .futer-subscribe__send {
@@ -268,11 +327,31 @@ ul {
 }
 
 .social-links {
-  margin-left: 70px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-links {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links {
+    margin-left: 70px;
+    margin-top: 0px;
+  }
 }
 
 .social-links__list {
   display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links__list {
+    justify-content: left;
+  }
 }
 
 .social-links__item {
@@ -619,6 +698,18 @@ ul {
   background-color: var(--bg-page-colour);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
 .menu-close-btn {
   display: block;
   width: 40px;
@@ -641,6 +732,22 @@ ul {
   height: 100vh;
 }
 
+.main-nav__contact-link {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav__contact-link {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav__contact-link {
+    display: flex;
+  }
+}
+
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -651,6 +758,11 @@ ul {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.mob-menu__link:hover,
+.mob-menu__link:focus {
+  color: var(--accent-colour);
 }
 
 .mob-menu__contact-link:not(:last-child) {
@@ -681,7 +793,6 @@ ul {
 }
 
 .mob-menu__sllink {
-  padding-right: 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -689,19 +800,27 @@ ul {
   color: #2196F3;
 }
 
-.mob-menu__sllink:not(:last-child) {
+.mob-menu__social-item {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.mob-menu__social-item:first-child {
+  padding-left: 0;
+}
+
+.mob-menu__social-item:last-child {
   padding-right: 0;
 }
 
-.mob-menu__social-item::before {
-  content: '';
-  position: absolute;
-  left: 85px;
-  top: 10px;
-  width: 22px;
-  height: 0px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+.mob-menu__social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.icon-close_btn:hover,
+.icon-close_btn:focus {
+  fill: var(--accent-colour);
+  cursor: pointer;
 }
 
 /* страница герой */
@@ -1140,9 +1259,15 @@ img {
 }
 
 .futer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .futer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
 }
 
 .futer__logotext {
@@ -1155,19 +1280,44 @@ img {
   letter-spacing: 0.03em;
 }
 
-.futer a {
+.futer__logo-link {
   display: inline-block;
   text-decoration: none;
   font-style: normal;
+  color: var(--white-text-colour);
   transition: color 250ms var(--transition-cubic);
 }
 
-.futer__adress {
+.futer__list {
   margin-top: 20px;
+}
+
+.futer__mail {
+  margin-top: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .futer__mail {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .futer__tel {
+    margin-top: 8px;
+  }
+}
+
+.futer__adress {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--white-text-colour);
   line-height: 1.71;
+  font-style: normal;
   transition: color 250ms var(--transition-cubic);
 }
 
@@ -1176,6 +1326,7 @@ img {
 }
 
 .futer__logo {
+  padding-top: 60px;
   color: var(--white-text-colour);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -1190,10 +1341,33 @@ img {
   color: var(--accent-colour);
 }
 
+@media screen and (min-width: 768px) {
+  .futer__logo {
+    padding-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .futer__logo {
+    padding-top: 0;
+    color: var(--white-text-colour);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 250ms var(--transition-cubic);
+  }
+}
+
 .futer__link {
-  margin-top: 9px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--futer-mail-tel);
   transition: color 250ms var(--transition-cubic);
@@ -1204,10 +1378,31 @@ img {
 }
 
 .container.futer {
-  display: flex;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .container.futer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    align-items: baseline;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.futer_tablet {
+  display: block;
   align-items: baseline;
-  padding-top: 0;
-  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .futer_tablet {
+    display: flex;
+  }
 }
 
 /* страница портфолио */
@@ -1335,6 +1530,16 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.first__card {
+  padding-bottom: 56px;
+}
+
+@media screen and (min-width: 1200px) {
+  .first__card {
+    padding-bottom: 20px;
+  }
 }
 
 .main-project-group {
