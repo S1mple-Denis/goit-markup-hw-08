@@ -11,13 +11,15 @@
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 60px;
+
     @include tablet {
     justify-content: center;
     }
-    
-    // gap: 8px;
-    // justify-content: center;
-}
+    @include desktop {
+        margin-top: 94px;
+    }
+    }
 
 .portfolio__item {
     margin-right: 8px;
@@ -27,6 +29,6 @@
             margin-right: 0;
         }
     @media screen and (min-width:768px) {
-        
+        margin-bottom: 0px;    
 }
 }

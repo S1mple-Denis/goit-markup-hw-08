@@ -1415,11 +1415,18 @@ img {
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__list {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    margin-top: 94px;
   }
 }
 
@@ -1432,8 +1439,13 @@ img {
   margin-right: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    margin-bottom: 0px;
+  }
+}
+
 .projects {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
