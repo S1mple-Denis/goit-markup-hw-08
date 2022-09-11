@@ -1,5 +1,5 @@
 /* навигация сайта */
-.main-nav__list a {
+.main-nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -7,6 +7,9 @@
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
+}
+.current {
+    color: var(--accent-colour);
 }
 
 .main-nav__contacts {
@@ -21,6 +24,8 @@
     @include desktop {
         display: flex;
         margin-left: 315px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -29,10 +34,21 @@
     @include tablet {
         padding: 0;
     }
+    @include desktop {
+        padding-left: 30px;
+    }
 }
 
-.main-nav__contacts a {
+
+.main-nav__link_conect {
     display: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+
 @include tablet {
     display: flex;
     padding: 0;
@@ -50,13 +66,48 @@
     align-items: baseline;
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 10px;
+    margin-bottom: 0;
+    // padding-left: 30px;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
     }
 }
+.main-nav__link_phone {
+        display: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #757575;
+    
+        @include tablet {
+            display: flex;
+            padding: 0;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            color: #757575;
+        }
+    
+        @include desktop {
+            display: flex;
+            align-items: center;
+            align-items: baseline;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            margin-bottom: 0;
+            // padding-left: 30px;
+            color: var(--primary-text-color);
+            font-weight: 500;
+            line-height: 1.14;
+            text-decoration: none;
+        }
+    }
 
 .main-nav__icon {
     display: flex;
@@ -70,6 +121,7 @@
 }
 .main-nav__link {
 transition: color 250ms var(--transition-cubic);
+
 }
 
 .main-nav__link:hover,
@@ -77,9 +129,6 @@ transition: color 250ms var(--transition-cubic);
     color: var(--accent-colour);
 }
 
-.main-nav__list .link.current {
-    color: var(--accent-colour);
-}
 
 .current::after {
     position: absolute;

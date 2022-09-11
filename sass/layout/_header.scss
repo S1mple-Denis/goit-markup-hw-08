@@ -55,9 +55,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-        margin: 0 auto;
-        width: 100%;
-        padding-left: 40px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 40px;
 }
 
 .menu-open-btn {
@@ -125,14 +125,13 @@ display: none;
     letter-spacing: 0.02em;
     color: #212121;
 }
+.mob-menu__link.current {
+    color: var(--accent-colour);
+}
 
 .mob-menu__link:hover,
 .mob-menu__link:focus {
     color: var(--accent-colour);
-}
-
-.current {
-    
 }
 
 .mob-menu__contact-link:not(:last-child) {
