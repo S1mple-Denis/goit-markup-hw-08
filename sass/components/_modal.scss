@@ -24,10 +24,13 @@
     // margin-left: 3px;
     text-decoration-line: underline;
     color: var(--accent-colour);
+   
     @include desktop {
+        font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+        // color: #757575;
     }
 }
 
@@ -105,7 +108,12 @@
 
 .modal__label {
     margin-bottom: 4px;
-    font-size: 12px;
+    ont-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;    
+        letter-spacing: 0.01em;
+        color: #757575;
 }
 
 .modal__input {
@@ -139,12 +147,20 @@
     .textarea {
     transition: border-color 250ms var(--transition-cubic);
     }
-
+.label_name {
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
 
 .modal__checkbox-point {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    // margin-top: 20px;
     justify-content: left;
 
     @include desktop {
@@ -198,7 +214,7 @@
 
 .modal__checkbox {
     display: flex;
-    align-items: baseline;
+    margin-top: 20px;
     @include desktop {
     justify-content: center;
 }
@@ -222,10 +238,17 @@
         }
 }
 .modal_check-text {
-font-size: 12px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
+    @include desktop {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
 }
 .modal__submit {
     display: block;

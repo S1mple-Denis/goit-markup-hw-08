@@ -36,6 +36,8 @@
 }
 
 .prefences__title {
+    display: flex;
+    justify-content: center;
     margin: 0;
     color: var(--title-text-color);
     font-weight: 700;
@@ -44,6 +46,13 @@
     text-align: left;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
+    @include tablet {
+    justify-content: left;
+    }
+    @include desktop {
+        justify-content: left;
+    }
 }
 
 .prefences p {
@@ -52,10 +61,16 @@
 }
 .prefences__pic {
     display: flex;
-    width: 100%;
+    // max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     background-color: #f5f4fa;
+    // @include tablet {
+    //     max-width: 354px;
+    // }
+    // @include desktop {
+    //     max-width: 270px;
+    // }
 }
