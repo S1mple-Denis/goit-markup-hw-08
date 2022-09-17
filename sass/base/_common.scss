@@ -13,16 +13,19 @@ body {
     
     @include mobile {
         min-width: 320px;
+        max-width: 480px;
         padding-left: 15px;
         padding-right: 15px;
     }
     @include tablet {
         width: 768px;
+        max-width: 1199px;
         padding-left: 15px;
         padding-right: 15px;
     }
     @include desktop{
         width: 1200px;
+        max-width: 1600px;
      }
 }
 ul {

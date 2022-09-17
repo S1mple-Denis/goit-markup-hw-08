@@ -46,6 +46,7 @@ body {
 @media screen and (min-width: 320px) {
   .container {
     min-width: 320px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -54,6 +55,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    max-width: 1199px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -62,6 +64,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -301,6 +304,7 @@ ul {
   /* position: absolute; */
   margin-bottom: 20px;
   width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
