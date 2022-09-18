@@ -80,7 +80,6 @@ ul {
 /* кнопка */
 .hero-page__button {
   margin-top: 30px;
-  margin-bottom: 118px;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -1037,7 +1036,6 @@ ul {
 }
 
 .hero-page__title {
-  padding-top: 118px;
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
@@ -1237,7 +1235,7 @@ img {
 }
 
 .our-team__title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 28px;
@@ -1619,21 +1617,21 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 40px;
+  margin-top: 40px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .projects {
-    padding-top: 30px;
+    margin-top: 30px;
     padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects {
-    padding-top: 50px;
-    padding-bottom: 94px;
+    margin-top: 50px;
+    margin-bottom: 94px;
   }
 }
 
